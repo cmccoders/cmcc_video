@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>CMCC LT</title>
+    <link href="lowerthird_v2.css" rel="stylesheet" type="text/css" />
+    <script>
+      window.elusien_framerate = 30; // Change this if you change the video's framerate.
+      
+      window.elusien_keyframes = {
+      "main-in" : [
+          {offset:0,  "transform": "translate3d(0, 10em, 0)", "opacity":  0,},
+          {offset:1,  "transform": "translate3d(0, 0, 0)", "opacity":  1,}
+      ]
+      ,"main-out" : [
+          {offset:0,  "transform": "translate3d(0, 0, 0)", "opacity":  1,},
+          {offset:1,  "transform": "translate3d(0, 10em, 0)", "opacity":  0,}
+      ]
+      ,"animation-1-text-1-in" : [
+          {offset:0, "transform": "translate3d(-1000px, 0, 0)",},
+          {offset:0.5, "transform": "translate3d(-1000px, 0, 0)",},
+          {offset:1, "transform": "translate3d(0px, 0, 0)",}
+      ]
+      ,"animation-1-text-1-out" : [
+          {offset:0, "transform": "translate3d(0px, 0, 0)",},
+          {offset:0.5, "transform": "translate3d(-1000px, 0, 0)",},
+          {offset:1, "transform": "translate3d(-1000px, 0, 0)",}
+      ]
+      ,"animation-1-text-2-in" : [
+          {offset:0, "transform": "translate3d(2000px, 0, 0)",},
+          {offset:0.5, "transform": "translate3d(2000px, 0, 0)",},
+          {offset:1, "transform": "translate3d(0px, 0, 0)",}
+      ]
+      ,"animation-1-text-2-out" : [
+          {offset:0, "transform": "translate3d(0px, 0, 0)",},
+          {offset:0.5, "transform": "translate3d(2000px, 0, 0)",},
+          {offset:1, "transform": "translate3d(2000px, 0, 0)",}
+      ]
+      ,"feature-in" : [
+          {offset:0, "transform": "translate3d(-1500px, 0, 0)",},
+          {offset:0.5, "transform": "translate3d(-1500px, 0, 0)",},
+          {offset:1, "transform": "translate3d(0px, 0, 0)",}
+      ]
+      ,"feature-out" : [
+          {offset:0, "transform": "translate3d(0px, 0, 0)",},
+          {offset:0.5, "transform": "translate3d(-1500px, 0, 0)",},
+          {offset:1, "transform": "translate3d(-1500px, 0, 0)",}
+      ]
+      };
+      
+      // CONVERTED CSS ANIMATIONS
+      
+      window.elusien_animate = [
+        {elements: "#main", animations: [
+          {keyname:"main-in", timings: {duration:3000, easing:"linear", delay:0, iterations:1, direction:"normal", fill:"forwards"}},
+          {keyname:"main-out", timings: {duration:3000, easing:"linear", delay:13000, iterations:1, direction:"normal", fill:"forwards"}}
+        ]},
+        {elements: "#text-1", animations: [
+          {keyname:"animation-1-text-1-in", timings: {duration:3000, easing:"linear", delay:0, iterations:1, direction:"normal", fill:"forwards"}},
+          {keyname:"animation-1-text-1-out", timings: {duration:3000, easing:"linear", delay:13000, iterations:1, direction:"normal", fill:"forwards"}}
+        ]},
+        {elements: "#text-2", animations: [
+          {keyname:"animation-1-text-2-in", timings: {duration:3000, easing:"linear", delay:0, iterations:1, direction:"normal", fill:"forwards"}},
+          {keyname:"animation-1-text-2-out", timings: {duration:3000, easing:"linear", delay:13000, iterations:1, direction:"normal", fill:"forwards"}}
+        ]},
+        {elements: ".primary", animations: [
+          {keyname:"feature-in", timings: {duration:3000, easing:"linear", delay:0, iterations:1, direction:"normal", fill:"forwards"}},
+          {keyname:"feature-out", timings: {duration:3000, easing:"linear", delay:13000, iterations:1, direction:"normal", fill:"forwards"}}
+        ]}
+      ]
+    </script>
+    <script src="./jquery.min.js"         ></script>
+    <script src="./elusien_cssanims2js.js"></script>
+    <script>!window.jQuery && document.write(unescape('%3Cscript src="jquery.min.js"%3E%3C/script%3E%3Cscript src="elusien_cssanims2js.js"%3E%3C/script%3E'))</script>
+  </head>
+  <body>
+    <main id="main">
+      <div id="animation-1" class="animation">
+          <div class="img"><img src="../CMCC Logo.png" height="75px"></div>
+          <div class="text">
+            
+            <div class="black light mask">
+              <div id="text-1">Chiangmai Community Church<div class="primary">///</div></div>
+            </div>
+            <div class="black light mask">
+              <div id="text-2"> 17 May 2020 </div>
+            </div>
+          </div>
+      </div>
+    </main>
+  </body>
+</html>
+
+
+<!--
+#138d3fff - Dark Green
+#92fa9c00 - Light Green
+#094b74ff - Blue
+-->
