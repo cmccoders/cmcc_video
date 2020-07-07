@@ -24,7 +24,7 @@ main {
 }
 
 #text-1 {
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     animation: animation-1-text-1-in 4s, animation-1-text-1-out 4s 13s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
