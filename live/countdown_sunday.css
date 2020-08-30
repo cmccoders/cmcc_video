@@ -2,5 +2,12 @@ body {
     font-size: 48pt;
     font-weight: 600;
     color: #333;
+}
 
+body {
+    margin: 0;
+}
+
+body div {
+    text-align: center;
 }
